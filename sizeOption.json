@@ -1,0 +1,49 @@
+{
+  "longSleeveGreenShirt": [
+    "Not Required",
+    "72/2XS",
+    "77/XS",
+    "82/S",
+    "87/M",
+    "92/L",
+    "97/XL",
+    "102/2XL",
+    "107/3XL",
+    "112/4XL",
+    "117/5XL",
+    "122/6XL",
+    "127/7XL",
+    "132/8XL"
+  ],
+
+  "sizes": [
+    "Not Required",
+    "2XS",
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL",
+    "4XL",
+    "5XL",
+    "6XL",
+    "7XL",
+    "8XL"
+  ],
+
+  "shirts": [
+    { "size": "72/2XS", "chest": 103, "hem": 101, "front_length": 79, "cb_length": 81 },
+    { "size": "77/XS", "chest": 108, "hem": 106, "front_length": 80, "cb_length": 82 },
+    { "size": "82/S", "chest": 113, "hem": 111, "front_length": 81, "cb_length": 83 }
+  ],
+  "jackets": [
+    { "size": "72/2XS", "chest": 108, "hem": 110, "cb_length": 77 },
+    { "size": "77/XS", "chest": 113, "hem": 115, "cb_length": 78 }
+  ],
+  "trousers": [
+    { "size": "77R", "waist_relaxed": 78, "waist_adjusted": 83, "inleg": 83 },
+    { "size": "82R", "waist_relaxed": 83, "waist_adjusted": 88, "inleg": 83 }
+  ]
+}
