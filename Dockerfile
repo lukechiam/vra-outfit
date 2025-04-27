@@ -1,11 +1,12 @@
-# Use the official Nginx image as the base
-FROM nginx:alpine
+FROM python:alpine
 
-# Copy the repository's static files to Nginx's default public directory
-COPY . /usr/share/nginx/html
+WORKDIR /app
 
-# Expose port 80 for HTTP traffic
-EXPOSE 80
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+COPY ./app .
+
+EXPOSE 8000
+
+CMD ["gunicorn", "-c", "gunicorn_config.py", "app:app"]

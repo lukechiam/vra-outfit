@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRA Uniform Request Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1>VRA Uniform Request Form</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }} <!-- Add CSRF token -->
+      
+      {{ form.firstName.label }} {{ form.firstName() }}
+      {{ form.lastName.label }} {{ form.lastName() }}
+
+      {{ form.longSleeveGreenShirt.label }}
+      {{ form.longSleeveGreenShirt() }}
+      <img src="{{ url_for('static', filename='img/longSleeveGreenShirt.png') }}">
+
+      {{ form.tShirt.label }}
+      {{ form.tShirt() }}
+      <img src="{{ url_for('static', filename='img/tShirt.png') }}">
+
+      {{ form.jacket.label }}
+      <div>This will be a top layer for most Rescues. Make sure you can wear jumpers underneath for winter Jobs as this Jacket is for protection and provides little warmth</div>
+      {{ form.jacket() }}
+      <img src="{{ url_for('static', filename='img/jacket.png') }}">
+
+      {{ form.rainJacket.label }}
+      {{ form.rainJacket() }}
+
+      {{ form.rainPants.label }}
+      {{ form.rainPants() }}
+
+      {{ form.submit() }}
+    </form>
+
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+  </body>
+</html>
